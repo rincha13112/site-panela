@@ -47,7 +47,7 @@ function finalizarCompra() {
     });
     mensagem += `\nTotal: R$ ${total.toFixed(2)}`;
 
-    const url = `https://wa.me/5511999999999?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/5511916489808?text= Olá, desejo finalizar minha compra !${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 
     carrinho = [];
