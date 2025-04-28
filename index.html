@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panelas & Cozinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Panelas & Cozinha</h1>
+        <nav>
+            <ul>
+                <li><a href="#panelas">Panelas</a></li>
+                <li><a href="#utensilios">Utensílios</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h2>Promoções Imperdíveis!</h2>
+            <p>Panelas antiaderentes e utensílios com desconto especial.</p>
+        </section>
+
+        <section id="panelas" class="produtos">
+            <h2>Panelas</h2>
+            <div class="produto">
+                <img src="panela1.jpg" alt="Conjunto de Panelas">
+                <h3>Conjunto de Panelas Antiaderente</h3>
+                <p class="preco">299.90</p>
+                <button onclick="adicionarAoCarrinho('Conjunto de Panelas Antiaderente', 299.90)">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="panela2.jpg" alt="Panela de Pressão">
+                <h3>Panela de Pressão 4,5L</h3>
+                <p class="preco">199.90</p>
+                <button onclick="adicionarAoCarrinho('Panela de Pressão 4,5L', 199.90)">Comprar</button>
+            </div>
+        </section>
+
+        <section id="utensilios" class="produtos">
+            <h2>Utensílios Domésticos</h2>
+            <div class="produto">
+                <img src="utensilio1.jpg" alt="Kit de Utensílios">
+                <h3>Kit de Utensílios de Cozinha</h3>
+                <p class="preco">79.90</p>
+                <button onclick="adicionarAoCarrinho('Kit de Utensílios de Cozinha', 79.90)">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="utensilio2.jpg" alt="Concha de Silicone">
+                <h3>Concha de Silicone</h3>
+                <p class="preco">29.90</p>
+                <button onclick="adicionarAoCarrinho('Concha de Silicone', 29.90)">Comprar</button>
+            </div>
+        </section>
+
+        <section id="carrinho" class="produtos">
+            <h2>Carrinho de Compras</h2>
+            <ul id="lista-carrinho">
+                <li>Seu carrinho está vazio.</li>
+            </ul>
+            <h3 id="total">Total: R$ 0,00</h3>
+            <button id="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Panelas & Cozinha - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
